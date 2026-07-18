@@ -1,0 +1,17 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = 'kitty'
+
+# mismos colores que ~/.config/kitty/kitty.conf -- al pisar estos nombres
+# (red/green/yellow/purple/cyan/blue), todos los módulos que ya los usan
+# por defecto (directory, git_branch, git_status, character, cmd_duration,
+# etc.) quedan re-teñidos automáticamente, sin tocar cada módulo a mano.
+[palettes.kitty]
+red = '#ff5f57'
+green = '#2acf2a'
+yellow = '#febc2e'
+blue = '#2e8ccf'
+purple = '#a550a7'
+cyan = '#58d1eb'
+white = '#e0e0e0'
+black = '#1e1e2e'

@@ -11,7 +11,8 @@ los archivos a su lugar.
 | `kitty/kitty.conf` | `~/.config/kitty/kitty.conf` | Tema (colores vivos estilo macOS + fondo Catppuccin Mocha), tabs powerline, estela de cursor, flash de bell, aviso de escritorio cuando termina un comando largo (`notify_on_cmd_finish`), atajo `Windows+S` para split |
 | `fish/config.fish` | `~/.config/fish/config.fish` | Conecta atuin, zoxide, fzf y starship; la leyenda de símbolos del prompt que se imprime al abrir terminal |
 | `fish/conf.d/mascot_reaction.fish` | `~/.config/fish/conf.d/mascot_reaction.fish` | Reacción con carita cuando un comando tarda 5s+ (éxito/fallo, con duración) |
-| `fastfetch/config.jsonc` | `~/.config/fastfetch/config.jsonc` | Fastfetch recortado a lo esencial, colores del mismo tema |
+| `fastfetch/config.jsonc` | `~/.config/fastfetch/config.jsonc` | Fastfetch con logo aleatorio entre varios compactos ("_small", no se distorsionan al achicar la ventana), colores del mismo tema |
+| `starship/starship.toml` | `~/.config/starship.toml` | Paleta de starship pisando los mismos colores de kitty (cian/azul/morado/etc.) — retiñe directory, git_branch, git_status, character, etc. sin tocar cada módulo |
 
 ## Dependencias
 
@@ -35,6 +36,7 @@ cp ~/git-hub/kitty/kitty/kitty.conf        ~/.config/kitty/kitty.conf
 cp ~/git-hub/kitty/fish/config.fish        ~/.config/fish/config.fish
 cp ~/git-hub/kitty/fish/conf.d/mascot_reaction.fish ~/.config/fish/conf.d/mascot_reaction.fish
 cp ~/git-hub/kitty/fastfetch/config.jsonc  ~/.config/fastfetch/config.jsonc
+cp ~/git-hub/kitty/starship/starship.toml  ~/.config/starship.toml
 
 # importar historial viejo de fish a atuin (opcional, solo la primera vez)
 atuin import fish
@@ -45,5 +47,3 @@ atuin import fish
 - El atajo de KDE para abrir kitty (`Alt+K`) — vive en `~/.config/kglobalshortcutsrc`,
   es config de todo el escritorio, no de kitty. Hay que rehacerlo desde
   System Settings → Atajos en la máquina nueva.
-- El tema de `starship` sigue en su preset default (pendiente: colorearlo a
-  juego con el resto).
