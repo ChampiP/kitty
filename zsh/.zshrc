@@ -1,3 +1,7 @@
+# autosugerencias: si no hay nada en el historial, cae a autocompletado normal
+# (así también sugiere carpetas/archivos que nunca has visitado, no solo historial)
+typeset -g ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 export POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 source /usr/share/cachyos-zsh-config/cachyos-config.zsh
