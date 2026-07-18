@@ -12,7 +12,16 @@ end
 # overwrite greeting
 # potentially disabling fastfetch
 function fish_greeting
-    fastfetch
+    # logos compactos ("_small") -- no se distorsionan al achicar la ventana
+    # como pasaba con el logo grande de CachyOS. Uno al azar cada vez que abres.
+    set -l logos CachyOS_small arch_small Fedora_small Gentoo_small Garuda_small \
+        Kali_small NixOS_small manjaro_small macOS_small Haiku_small Debian_small opensuse_small
+
+    if test (tput cols) -lt 30
+        fastfetch --logo none
+    else
+        fastfetch --logo (random choice $logos)
+    end
     _starship_legend
 end
 
