@@ -4,6 +4,11 @@ Config de kitty + fish + fastfetch tal como quedaron configurados, para poder
 levantar el mismo arsenal en otra máquina solo clonando este repo y copiando
 los archivos a su lugar.
 
+`skills/mis-preferencias-pc/SKILL.md` documenta el *por qué* de estas
+decisiones (qué se probó y se rechazó, qué gustos son estables) — instalarla
+en `~/.claude/skills/mis-preferencias-pc/` para que Claude Code la tenga
+presente en cualquier sesión futura de configuración del sistema.
+
 ## Qué hay aquí
 
 | Archivo | Va en | Qué hace |
