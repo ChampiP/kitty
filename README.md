@@ -13,6 +13,7 @@ los archivos a su lugar.
 | `fish/conf.d/mascot_reaction.fish` | `~/.config/fish/conf.d/mascot_reaction.fish` | Reacción con carita cuando un comando tarda 5s+ (éxito/fallo, con duración) |
 | `fastfetch/config.jsonc` | `~/.config/fastfetch/config.jsonc` | Fastfetch con logo aleatorio entre varios compactos ("_small", no se distorsionan al achicar la ventana), colores del mismo tema |
 | `starship/starship.toml` | `~/.config/starship.toml` | Paleta de starship pisando los mismos colores de kitty (cian/azul/morado/etc.) — retiñe directory, git_branch, git_status, character, etc. sin tocar cada módulo |
+| `zsh/.zshrc` | `~/.zshrc` | Mismo setup que fish pero para zsh (usado por Cursor y otras apps que abren zsh en vez de fish): fastfetch con logo aleatorio + leyenda de prompt, zoxide, atuin, y starship — apaga Powerlevel10k (viene por defecto en CachyOS) para que no pise el prompt de starship |
 
 ## Dependencias
 
@@ -37,6 +38,7 @@ cp ~/git-hub/kitty/fish/config.fish        ~/.config/fish/config.fish
 cp ~/git-hub/kitty/fish/conf.d/mascot_reaction.fish ~/.config/fish/conf.d/mascot_reaction.fish
 cp ~/git-hub/kitty/fastfetch/config.jsonc  ~/.config/fastfetch/config.jsonc
 cp ~/git-hub/kitty/starship/starship.toml  ~/.config/starship.toml
+cp ~/git-hub/kitty/zsh/.zshrc              ~/.zshrc
 
 # importar historial viejo de fish a atuin (opcional, solo la primera vez)
 atuin import fish
