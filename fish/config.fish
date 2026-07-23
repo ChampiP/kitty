@@ -26,7 +26,7 @@ function fish_greeting
 end
 
 # opencode
-fish_add_path /home/brayan/.opencode/bin
+fish_add_path /home/champip/.opencode/bin
 set -gx PATH $HOME/.npm-global/bin $PATH
 
 # atuin: historial de shell buscable, con duración y código de salida por comando
